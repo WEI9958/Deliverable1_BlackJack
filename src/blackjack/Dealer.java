@@ -15,7 +15,7 @@ Dealer(Deck deck)
 {
     hand = new ArrayList<>();
     aHand = new Card[]{};
-    int AceCounter=0;
+    AceCounter=0;
     for(int i=0; i<2; i++)
     {
         hand.add(deck.drawCard());

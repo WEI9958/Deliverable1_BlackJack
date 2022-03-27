@@ -7,7 +7,7 @@ import java.util.Random;
  * @author William Chen
  */
 public class Deck {
-private ArrayList<Card> deck;
+private final ArrayList<Card> deck;
 Deck()
 {
     deck = new ArrayList<Card>();
