@@ -8,17 +8,14 @@ import java.util.Random;
  */
 public class Deck {
 private final ArrayList<Card> deck;
-Deck()
-{
-    deck = new ArrayList<Card>();
-    for(int i=0; i<4; i++)
-    {
-        for(int j=1; j<=13; j++)
-        {
-            deck.add(new Card(i,j));
+public Deck() {
+        deck = new ArrayList<>();
+        for (Suit suit : Suit.values()) {
+            for (Rank rank : Rank.values()) {
+                deck.add(new Card(rank, suit));
+            }
         }
     }
-}
 public void shuffle()
 {
     Random random = new Random();
